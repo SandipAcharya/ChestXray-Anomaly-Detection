@@ -1,0 +1,25 @@
+{
+  "name": "xray-backend",
+  "version": "1.0.0",
+  "description": "Backend for X-ray anomaly detection",
+  "main": "import_files.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon import_files.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "keywords": [
+    "xray",
+    "backend",
+    "express",
+    "api"
+  ],
+  "author": "Your Name",
+  "license": "ISC"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "imageUrl": "http://localhost:3000/images/processed_image.jpeg",
+    "anomalies": [
+      {
+        "anomalyName": "Fracture",
+        "percentage": "85%"
+      },
+      {
+        "anomalyName": "Infection",
+        "percentage": "60%"
+      }
+    ]
+  },
+  {
+    "imageUrl": "http://localhost:3000/images/apple.jpg",
+    "anomalies": [
+      {
+        "anomalyName": "Fracture",
+        "percentage": "65%"
+      }
+    ]
+  },
+  {
+    "imageUrl": "http://localhost:3000/images/ball.jpg",
+    "anomalies": [
+      {
+        "anomalyName": "Fracture",
+        "percentage": "65%"
+      },
+      {
+        "anomalyName": "crack",
+        "percentage": "50%"
+      }
+    ]
+  }
+]
