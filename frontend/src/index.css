@@ -61,6 +61,29 @@ body, html {
   background-color: #eae9e9; /* Set the background color of the track */
   border-radius: 10px; /* Optional: Rounded corners for the track */
 }
+.context-menu {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.context-menu button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.context-menu button:hover {
+  background: #f0f0f0;
+}
 
 
 

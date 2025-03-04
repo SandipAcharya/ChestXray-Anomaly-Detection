@@ -1,0 +1,46 @@
+[
+    {
+        "anomalyName": "Aortic enlargement",
+        "percentage": "76.28%"
+    },
+    {
+        "anomalyName": "Pleural thickening",
+        "percentage": "61.71%"
+    },
+    {
+        "anomalyName": "Infiltration",
+        "percentage": "54.69%"
+    },
+    {
+        "anomalyName": "Lung Opacity",
+        "percentage": "51.38%"
+    },
+    {
+        "anomalyName": "Infiltration",
+        "percentage": "40.01%"
+    },
+    {
+        "anomalyName": "Lung Opacity",
+        "percentage": "38.81%"
+    },
+    {
+        "anomalyName": "Lung Opacity",
+        "percentage": "38.68%"
+    },
+    {
+        "anomalyName": "Consolidation",
+        "percentage": "34.85%"
+    },
+    {
+        "anomalyName": "Cardiomegaly",
+        "percentage": "34.64%"
+    },
+    {
+        "anomalyName": "Lung Opacity",
+        "percentage": "28.91%"
+    },
+    {
+        "anomalyName": "Consolidation",
+        "percentage": "27.24%"
+    }
+]

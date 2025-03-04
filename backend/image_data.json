@@ -1,36 +1,104 @@
 [
   {
-    "imageUrl": "http://localhost:3000/images/processed_image.jpeg",
+    "imageUrl": "http://localhost:3000/images/xray_1741095785017.jpg",
     "anomalies": [
       {
-        "anomalyName": "Fracture",
-        "percentage": "85%"
+        "anomalyName": "Aortic enlargement",
+        "percentage": "76.28%"
       },
       {
-        "anomalyName": "Infection",
-        "percentage": "60%"
+        "anomalyName": "Pleural thickening",
+        "percentage": "61.71%"
+      },
+      {
+        "anomalyName": "Infiltration",
+        "percentage": "54.69%"
+      },
+      {
+        "anomalyName": "Lung Opacity",
+        "percentage": "51.38%"
+      },
+      {
+        "anomalyName": "Infiltration",
+        "percentage": "40.01%"
+      },
+      {
+        "anomalyName": "Lung Opacity",
+        "percentage": "38.81%"
+      },
+      {
+        "anomalyName": "Lung Opacity",
+        "percentage": "38.68%"
+      },
+      {
+        "anomalyName": "Consolidation",
+        "percentage": "34.85%"
+      },
+      {
+        "anomalyName": "Cardiomegaly",
+        "percentage": "34.64%"
+      },
+      {
+        "anomalyName": "Lung Opacity",
+        "percentage": "28.91%"
+      },
+      {
+        "anomalyName": "Consolidation",
+        "percentage": "27.24%"
       }
     ]
   },
   {
-    "imageUrl": "http://localhost:3000/images/apple.jpg",
+    "imageUrl": "http://localhost:3000/images/xray_1741095749264.jpg",
     "anomalies": [
       {
-        "anomalyName": "Fracture",
-        "percentage": "65%"
+        "anomalyName": "Atelectasis",
+        "percentage": "56.35%"
       }
     ]
   },
   {
-    "imageUrl": "http://localhost:3000/images/ball.jpg",
+    "imageUrl": "http://localhost:3000/images/xray_1741095700393.jpg",
     "anomalies": [
       {
-        "anomalyName": "Fracture",
-        "percentage": "65%"
+        "anomalyName": "Cardiomegaly",
+        "percentage": "74.27%"
       },
       {
-        "anomalyName": "crack",
-        "percentage": "50%"
+        "anomalyName": "Aortic enlargement",
+        "percentage": "67.81%"
+      },
+      {
+        "anomalyName": "Pleural thickening",
+        "percentage": "62.11%"
+      },
+      {
+        "anomalyName": "Pleural effusion",
+        "percentage": "40.55%"
+      },
+      {
+        "anomalyName": "Pleural effusion",
+        "percentage": "37.19%"
+      },
+      {
+        "anomalyName": "Pleural effusion",
+        "percentage": "36.99%"
+      },
+      {
+        "anomalyName": "Lung Opacity",
+        "percentage": "35.07%"
+      },
+      {
+        "anomalyName": "Pleural thickening",
+        "percentage": "30.48%"
+      },
+      {
+        "anomalyName": "Pulmonary fibrosis",
+        "percentage": "28.34%"
+      },
+      {
+        "anomalyName": "Pleural thickening",
+        "percentage": "25.21%"
       }
     ]
   }
