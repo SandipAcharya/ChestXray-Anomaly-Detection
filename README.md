@@ -31,9 +31,13 @@ You can access the dataset used in this project from Kaggle:
 ##  Project Structure
 xray_anomaly_detection 
 ├── backend 
+
 ├── frontend 
+
 ├── yolov7-main 
+
 ├── README.md
+
 └── requirements.txt
 
 
@@ -52,6 +56,4 @@ Sahadev Chaulagain
 Samyam Giri 
 
 Sandip Acharya
-
-All code and data are used for educational purposes.
 
