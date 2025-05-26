@@ -29,12 +29,12 @@ You can access the dataset used in this project from Kaggle:
 | Framework    | PyTorch + OpenCV + react.js + javascript |
 
 ##  Project Structure
-xray_anomaly_detection //
-├── backend //
-├── frontend //
-├── yolov7-main //
-├── README.md //
-└── requirements.txt //
+xray_anomaly_detection 
+├── backend 
+├── frontend 
+├── yolov7-main 
+├── README.md
+└── requirements.txt
 
 
 ## Installation & Usage
@@ -47,12 +47,9 @@ python run_model.py
 ```
 
 # Team Members
-Sahadev Chaulagain //
-Samyam Giri //
+Sahadev Chaulagain \\
+Samyam Giri \\
 Sandip Acharya
-
-
-This project was done as a Minor Project under the Department of Electronics and Communication Engineering.
 
 All code and data are used for educational purposes.
 
