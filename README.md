@@ -26,7 +26,7 @@ You can access the dataset used in this project from Kaggle:
 |--------------|-------------|
 | Accuracy     | ~65–70%     |
 | Classes      | 13 Anomalies Detected |
-| Framework    | PyTorch + OpenCV + react.js + javascript |
+| Framework    | PyTorch + OpenCV + react.js + JavaScript |
 
 ##  Project Structure
 xray_anomaly_detection 
@@ -47,8 +47,10 @@ python run_model.py
 ```
 
 # Team Members
-Sahadev Chaulagain \\
-Samyam Giri \\
+Sahadev Chaulagain 
+
+Samyam Giri 
+
 Sandip Acharya
 
 All code and data are used for educational purposes.
