@@ -18,23 +18,23 @@ This is our Minor Project based on **Computer Vision**, focused on detecting **1
 
 You can access the dataset used in this project from Kaggle:
 
-👉 [CXRay14 Dataset on Kaggle](https://www.kaggle.com/datasets/sandipacharya10/cxray14)
+ [CXRay14 Dataset on Kaggle](https://www.kaggle.com/datasets/sandipacharya10/cxray14)
 
-## 📊 Results
+## Results
 
 | Metric       | Value       |
 |--------------|-------------|
 | Accuracy     | ~65–70%     |
 | Classes      | 13 Anomalies Detected |
-| Framework    | PyTorch + OpenCV      |
+| Framework    | PyTorch + OpenCV + react.js + javascript |
 
 ##  Project Structure
-xray_anomaly_detection/
-├── backend/
-├── frontend/
-├── yolov7-main/
-├── README.md
-└── requirements.txt
+xray_anomaly_detection //
+├── backend //
+├── frontend //
+├── yolov7-main //
+├── README.md //
+└── requirements.txt //
 
 
 ## Installation & Usage
@@ -44,12 +44,11 @@ git clone https://github.com/your-username/xray_anomaly_detection_by_sahadev.git
 cd xray_anomaly_detection
 pip install -r requirements.txt
 python run_model.py
-Replace run_model.py with your actual script name if different.
 ```
 
 # Team Members
-Sahadev Chaulagain
-Samyam Giri
+Sahadev Chaulagain //
+Samyam Giri //
 Sandip Acharya
 
 
