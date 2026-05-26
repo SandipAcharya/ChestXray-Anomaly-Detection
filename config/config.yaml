@@ -1,0 +1,76 @@
+# Configuration File for Chest X-Ray Anomaly Detection (CMRF-Net)
+
+# ==================== DATASET CONFIGURATION ====================
+data:
+  input_size: 512             # Standardized resolution for images and bounding boxes
+  num_classes: 14             # Number of regional thoracic abnormality classes
+  triage_classes: 15          # 14 pathologies + 1 "No Finding" class
+
+  # Class Mapping (14 categories from VinBig + NH-Xray datasets)
+  classes:
+    - "Aortic enlargement"
+    - "Atelectasis"
+    - "Calcification"
+    - "Cardiomegaly"
+    - "Consolidation"
+    - "ILD"
+    - "Infiltration"
+    - "Lung Opacity"
+    - "Nodule/Mass"
+    - "Other lesion"
+    - "Pleural effusion"
+    - "Pleural thickening"
+    - "Pneumothorax"
+    - "Pulmonary fibrosis"
+  
+  # "No Finding" is treated as an empty bounding box set, 
+  # but represents the 15th class in the Global Triage Head.
+  no_finding_label: "No finding"
+
+  # Train / Validation / Test Splitting Ratio
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+
+# ==================== ANCHOR CALIBRATION ====================
+# Calibrated to 512x512 input size. Expressed as [width, height] in pixels.
+anchors:
+  small_scale:   # 256x256 Grid (pulmonary nodules, tiny focal lesions)
+    - [10, 15]   # Normalized approx: (0.02, 0.03)
+    - [20, 36]   # Normalized approx: (0.04, 0.07)
+    - [41, 31]   # Normalized approx: (0.08, 0.06)
+  
+  medium_scale:  # 128x128 Grid (mass lesions, consolidations, cavitations)
+    - [77, 56]   # Normalized approx: (0.15, 0.11)
+    - [51, 108]  # Normalized approx: (0.10, 0.21)
+    - [113, 174] # Normalized approx: (0.22, 0.34)
+
+  large_scale:   # 64x64 Grid (cardiomegaly, pleural effusion, hyperinflation)
+    - [246, 317] # Normalized approx: (0.48, 0.62)
+    - [369, 215] # Normalized approx: (0.72, 0.42)
+    - [451, 481] # Normalized approx: (0.88, 0.94)
+
+# ==================== TRAINING HYPERPARAMETERS ====================
+train:
+  batch_size: 8
+  epochs: 300
+  base_lr: 0.001
+  min_lr: 0.000001
+  warmup_epochs: 5
+  weight_decay: 0.0005
+  adam_betas: [0.9, 0.999]
+  grad_clip_norm: 10.0
+  ema_decay: 0.9999
+  early_stopping_patience: 20
+  mixed_precision: true       # Automatic Mixed Precision (AMP) using float16
+
+# ==================== LOSS FUNCTION WEIGHTS ====================
+loss:
+  lambda_box: 5.0             # Emphasis on localization (CIoU) — doc Table 3
+  lambda_obj: 1.0             # Positive objectness (Focal Loss) — doc Table 3
+  lambda_noobj: 0.5           # Background objectness penalty — doc Table 3 (was missing)
+  lambda_cls: 1.0             # Classification (BCE) — doc Table 3 (was wrong: 0.5)
+  lambda_triage: 1.0          # Global Classification Head
+  focal_gamma: 2.0            # Focusing parameter γ=2.0 — doc Table 3
+  focal_alpha: 0.25           # Alpha parameter to balance foreground/background
+  ignore_iou_thr: 0.5         # τ_ignore=0.5 — doc Table 3
